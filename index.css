@@ -6,8 +6,12 @@
   --Desaturated_blue: hsl(224, 23%, 55%);
 }
 
-.body {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--Pale_blue);
+}
+.main-info {
+  background-color: var(--Very_pale_blue);
 }
