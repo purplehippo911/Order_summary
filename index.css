@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Red+Hat+Display:ital,wght@0,900;1,500;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,900;1,500;1,900&display=swap");
 :root {
   --Dark_blue: hsl(223, 47%, 23%); /* button */
   --Pale_blue: hsl(225, 100%, 94%);
@@ -45,8 +44,7 @@ img {
 }
 h1,
 h2,
-.btn_1 {
-  font-family: "Big Shoulders Display", cursive;
+button {
   font-family: "Red Hat Display", sans-serif;
 }
 h1 {
@@ -56,20 +54,18 @@ h1 {
 p {
   color: var(--Pale_blue);
   color: black;
-  opacity: 1;
+  opacity: 0.6;
   margin: 1.4rem;
 }
 
 .order_container {
   display: flex;
+  width: 20rem;
+  height: 5rem;
   border-radius: 10px;
-  background-color: var(--Dark_blue);
-  padding-inline-start: 2.4rem;
-  padding-inline-end: 2.4rem;
-  justify-content: space-between;
-  margin-block-start: 2rem;
-  margin-block-end: 3.2rem;
-  padding: 2.5rem 2.4rem;
+  background-color: var(--Desaturated_blue);
+  margin: 1rem;
+  padding: 1.4rem;
 }
 .music_icon {
   width: 40.8px;
@@ -87,29 +83,29 @@ h2 {
   top: 5px;
 }
 .change_order {
-  color: var(--Dark_blue);
+  color: var(--Bright_blue);
   text-decoration: underline;
-  border: 0;
   align-self: center;
 }
-.btn_1 {
+.change_order :hover {
+  color: var(--Dark_blue);
+}
+button {
   display: block;
   width: 90%;
   height: 40px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   border: 0px;
   border-radius: 10px;
-  background-color: var(--Bright_blue);
 }
-.btn_1 :hover {
-  cursor: pointer;
+
+.btn_1 {
+  background-color: var(--Bright_blue);
+  color: white;
+  box-shadow: 0px 20px 20px rgba(56, 24, 225, 0.1209291);
 }
 .cancel_order {
   margin: 20px;
-  padding: 20px;
   border: 0;
-  text-decoration: none;
   border-radius: 20px;
   color: var(--Bright_blue);
 }
