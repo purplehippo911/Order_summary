@@ -36,8 +36,9 @@ Desktop design:
 
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-WzOGBNlas)
-- Live Site URL: [](https://purplehippo911.github.io/Order_summary/)
+- Solution URL: (https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-WzOGBNlas)
+
+- Live Site URL: (https://purplehippo911.github.io/Order_summary/)
 
 ## My process
 
