@@ -28,11 +28,11 @@ Users should be able to:
 
 Mobile design:
 
-![](./mobile2.png)
+![](design/mobile2.png)
 
 Desktop design:
 
-![](./desktop2.png)
+![](design/desktop2.png)
 
 ### Links
 
