@@ -18,7 +18,7 @@ body {
   padding: 0;
   font-size: 16px;
   box-sizing: border-box;
-  background-color: red;
+  background-color: var(--Pale_blue);
   text-align: center;
   background-image: url(/images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
