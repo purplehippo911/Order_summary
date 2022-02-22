@@ -77,8 +77,8 @@ p {
 
 .music_icon {
   display: flex;
-  width: 40%;
-  height: 20px;
+  width: 50%;
+  height: 30px;
 }
 .plan_info {
   display: flex;
