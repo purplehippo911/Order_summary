@@ -23,6 +23,8 @@ body {
   background-image: url(/images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   font-family: "Red Hat Display", sans-serif;
+  position: relative;
+  top: 80px;
 }
 main {
   width: clamp(375px, 40%, 1440px);
@@ -77,8 +79,8 @@ p {
 
 .music_icon {
   display: flex;
-  width: 50%;
-  height: 30px;
+  width: 20%;
+  height: 50px;
 }
 .plan_info {
   display: flex;
