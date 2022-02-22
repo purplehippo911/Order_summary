@@ -33,7 +33,7 @@ main {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
   border-color: var(--Desaturated_blue);
 }
@@ -77,8 +77,8 @@ p {
 
 .music_icon {
   display: flex;
-  width: 20%;
-  height: 50px;
+  width: 40%;
+  height: 20px;
 }
 .plan_info {
   display: flex;
@@ -105,7 +105,7 @@ p {
 }
 button {
   display: block;
-  width: 90%;
+  width: 80%;
   height: 40px;
   border: 0px;
   border-radius: 10px;
