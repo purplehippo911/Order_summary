@@ -25,7 +25,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   display:flex;
   flex-direction:column;
-  align-items:center;
+  justify-content:center;
 }
 main {
   width: clamp(375px, 40%, 1440px);
@@ -72,10 +72,9 @@ p {
   background-color: var(--Very_pale_blue);
   display:grid;
   gap:2rem;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:auto auto;
   grid-auto-flow:column;
   padding: 0.5rem;
-  justify-content: space-between;
   border-radius: 10px;
   margin: 1rem;
 }
