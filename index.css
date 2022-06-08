@@ -70,8 +70,10 @@ p {
 
 .order_container {
   background-color: var(--Very_pale_blue);
-  display: flex;
-  align-items: center;
+  display:grid;
+  gap:2rem;
+  grid-template-columns:1fr 1fr;
+  grid-auto-flow:column;
   padding: 0.5rem;
   justify-content: space-between;
   border-radius: 10px;
