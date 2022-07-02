@@ -9,92 +9,103 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  box-sizing: border-box;
   background-color: var(--Pale_blue);
-  text-align: center;
-  background-image: url(/images/pattern-background-desktop.svg);
-  background-repeat: no-repeat;
+  background: url(/images/pattern-background-mobile.svg) no-repeat;
   font-family: "Red Hat Display", sans-serif;
-  position: relative;
-  top: 80px;
 }
+
 main {
   width: clamp(375px, 40%, 1440px);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 img {
-  width: 100%;
-  border-radius: 20px 20px 0px 0px;
-  border-color: var(--Desaturated_blue);
+  max-width: 100%;
 }
-.summary_card {
+
+.card {
+  background: url(/images/pattern-background-mobile.svg) no-repeat;
   border-radius: 1rem;
+  padding:2rem;
+}
+
+.container {
   background-color: white;
+  max-width:450px;
   width: 85%;
   margin: 0 auto;
+  box-shadow: 40px 40px 40px 40px hsla(0,0%,0%,.2);
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+img[alt="illustration of a girl listening to music"] {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.row {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
-  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  align-items:center;
 }
+
+.grid {
+  display:grid;
+  grid-template-columns: auto;
+  grid-auto-flow:column;
+  justify-items: center;
+  align-items:center;
+}
+
 .btn_1,
-.plan_title {
+.order__title {
   font-size: 1rem;
 }
+
 h1 {
   color: var(--Dark_blue);
-  padding-block-start: 1rem;
+  margin-bottom:auto;
+  font-size:3em;
   font-weight: 700;
 }
+
 p {
   color: var(--Pale_blue);
   color: black;
+  font-size:16px;
   opacity: 0.6;
 }
-.card_info {
-  margin: 1rem;
+
+.card__info {
+  padding:1.5rem;
+  margin:0;
 }
 
-.order_container {
+.order-container {
   background-color: var(--Very_pale_blue);
-  display: flex;
-  align-items: center;
+  width:90%;
   padding: 0.5rem;
-  justify-content: space-between;
   border-radius: 10px;
   margin: 1rem;
 }
 
-.music_icon {
-  display: flex;
-  width: 20%;
-  height: 50px;
-}
-.plan_info {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 5px;
-  left: 10px;
-}
-.plan_title {
+.order__title {
   font-weight: 600;
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 
-.change_order {
+.order__price {
+  margin-top:.2rem;
+  margin-bottom:auto;
+}
+
+.order__button {
   color: var(--Bright_blue);
   background-color: var(--pale_blue);
   text-decoration: underline;
@@ -102,13 +113,14 @@ p {
   font-size: 1rem;
   font-weight: 500;
 }
-.change_order:hover {
+
+.order__button:hover {
   opacity: 0.85;
 }
+
 button {
-  display: block;
   width: 80%;
-  height: 40px;
+  padding:1em;
   border: 0px;
   border-radius: 10px;
   cursor: pointer;
@@ -117,42 +129,46 @@ button {
 .btn_1 {
   background-color: var(--Bright_blue);
   color: white;
+  font-weight:700;
+  font-family:"Red Hat Display", sans-serif;
   box-shadow: 0px 20px 20px rgba(56, 24, 225, 0.1209291);
   margin-top: 1rem;
-  margin-left: 1rem;
 }
+
 .btn_1:hover {
   background-color: var(--Desaturated_blue);
 }
+
+button + button {
+  margin-top:1rem;
+}
+
 .cancel_order {
-  border: 0;
   border-radius: 20px;
   color: var(--Bright_blue);
+  font-weight:700;
+  font-family:"Red Hat Display", sans-serif;
   background-color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   opacity: 0.9;
 }
+
 .cancel_order:hover {
   color: var(--Dark_blue);
   opacity: 1;
-  font-weight: bold;
-}
-footer {
-  margin: 3rem;
-  padding: 50px;
-}
-
-footer img {
-  width: 20px;
-  height: 20px;
 }
 
 @media screen and (min-width: 375px) {
   body {
-    background-image: url(/images/pattern-background-mobile.svg);
+    background-image: url(/images/pattern-background-desktop.svg);
     font-size: 10px;
   }
-  .order_container {
+
+  .card {
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+  }
+  
+  .order-container {
     padding: 0.5rem;
     margin: 0.5rem;
   }
@@ -160,8 +176,9 @@ footer img {
     margin-bottom: 2rem;
   }
 }
+
 @media screen and (min-width: 1400px) {
-  order_container {
+  order-container {
     padding: 0.2rem;
     margin: 0.5;
   }
