@@ -21,10 +21,6 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 
-main {
-  width: clamp(375px, 40%, 1440px);
-}
-
 img {
   max-width: 100%;
 }
