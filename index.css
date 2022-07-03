@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500,700;900&display=swap");
 :root {
-  --Dark_blue: hsl(223, 47%, 23%); /* button_hover, title */
+  --Dark_blue: hsl(223, 47%, 23%); 
   --Pale_blue: hsl(225, 100%, 94%);
   --Bright_blue: hsl(245, 75%, 52%);
   --Very_pale_blue: hsl(225, 100%, 98%);
